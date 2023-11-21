@@ -65,7 +65,7 @@ export default async function Home() {
             return <div
               key={repo.name}
               className="h-fit w-full flex flex-row justify-start items-center py-2.5 px-4
-                rounded-sm cursor-pointer transition-all ease-in-out duration-[0.12] hover:bg-[#151515] gap-4 group ">
+                rounded-md cursor-pointer transition-all ease-in-out duration-[0.12] hover:bg-[#151515] gap-4 group ">
               <p className="text-xl text-[#424242] group-hover:text-[#AFAFAF] group-hover:transition-all 
                 group-hover:ease-in-out group-hover:duration-[0.12]">{repo.name}</p>
               <div className="h-fit w-fit gap-2 hidden flex-row justifiy-start items-center group-hover:flex">
