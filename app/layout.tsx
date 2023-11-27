@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`md:px-[27vw] sm:px-5 pt-60 ${jetbrains.className}`}>{children}</body>
+      <body className={`md:px-[27vw] sm:px-5 pt-60 overflow-hidden ${jetbrains.className}`}>{children}</body>
     </html>
   )
 }

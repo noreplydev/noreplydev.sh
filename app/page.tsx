@@ -49,7 +49,7 @@ export default async function Home() {
   const repos = await fetchRepos()
 
   return (
-    <main className="flex h-full flex-col items-center justify-between gap-5">
+    <main className="relative flex h-full w-full flex-col items-center justify-between gap-5 overflow-hidden">
       <div className="flex h-fit w-full flex-row justify-between items-end">
         <div className="flex h-full w-fit flex-col justify-between items-start gap-1">
           <h1 className="md:text-2xl font-medium whitespace-nowrap">Cristian Sánchez</h1>
@@ -58,10 +58,9 @@ export default async function Home() {
         <p className="text-xl text-[#424242]">software developer</p>
       </div>
       {/* PROJECTS */}
-      <div className="min-h-full w-full flex flex-col">
+      <div className="relative h-full w-full flex flex-col overflow-scroll">
         {
-          repos.map((repo: any, index: number) => {
-            console.log('repo', repo)
+          repos.map((repo: any) => {
             return <div
               key={repo.name}
               className="h-fit w-full flex flex-row justify-start items-center py-2.5 px-4
