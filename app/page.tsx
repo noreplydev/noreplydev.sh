@@ -1,7 +1,33 @@
 import { GitFork, Star } from "lucide-react"
 
 async function fetchRepos() {
-  return fetch(String(process.env.GITHUB_REPOS), {
+  return [
+    {
+      name: 'suiro',
+      stargazers_count: 10,
+      forks_count: 3,
+      lang: "rust"
+    },
+    {
+      name: 'antimodules',
+      stargazers_count: 3,
+      forks_count: 1,
+      lang: "rust"
+    },
+    {
+      name: 'banners-service',
+      stargazers_count: 2,
+      forks_count: 0,
+      lang: "javascript"
+    },
+    {
+      name: 'alive-sessions',
+      stargazers_count: 1,
+      forks_count: 0,
+      lang: "javascript"
+    }
+  ]
+  /* return fetch(String(process.env.GITHUB_REPOS), {
     cache: 'no-store',
     method: 'GET',
     // headers: {
@@ -16,8 +42,8 @@ async function fetchRepos() {
         }) : [
         {
           name: 'suiro',
-          stargazers_count: 8,
-          forks_count: 2
+          stargazers_count: 10,
+          forks_count: 3
         },
         {
           name: 'antimodules',
@@ -30,7 +56,7 @@ async function fetchRepos() {
           forks_count: 0
         }
       ]
-    })
+    }) */
 }
 
 async function fetchUser() {
