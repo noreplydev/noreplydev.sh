@@ -4,25 +4,25 @@ async function fetchRepos() {
   return [
     {
       name: 'suiro',
-      stargazers_count: 10,
+      stargazers_count: 11,
       forks_count: 3,
       lang: "rust"
     },
     {
       name: 'antimodules',
-      stargazers_count: 3,
+      stargazers_count: 4,
       forks_count: 1,
       lang: "rust"
     },
     {
       name: 'banners-service',
-      stargazers_count: 2,
+      stargazers_count: 3,
       forks_count: 0,
       lang: "javascript"
     },
     {
       name: 'alive-sessions',
-      stargazers_count: 1,
+      stargazers_count: 2,
       forks_count: 0,
       lang: "javascript"
     }
