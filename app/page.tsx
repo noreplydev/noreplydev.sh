@@ -1,5 +1,10 @@
 import { GitFork, Star } from "lucide-react"
 
+const langColors = {
+  "javascript": "#F0DB4F",
+  "rust": "#933A16"
+}
+
 async function fetchRepos() {
   return [
     {
@@ -92,7 +97,7 @@ export default async function Home() {
               className="h-fit w-full flex flex-row justify-start items-center py-2.5 px-4
                 rounded-md cursor-pointer transition-all ease-in-out duration-[0.12] hover:bg-[#151515] gap-4 group ">
               <p className="text-xl text-[#424242] group-hover:text-[#AFAFAF] group-hover:transition-all 
-                group-hover:ease-in-out group-hover:duration-[0.12]">{repo.name}</p>
+                group-hover:ease-in-out group-hover:duration-[0.12] whitespace-nowrap">{repo.name}</p>
               <div className="h-fit w-fit gap-2 hidden flex-row justifiy-start items-center group-hover:flex">
                 <Star size={18} fill="#424242" color="#424242" className="group-hover:fill-[#AFAFAF] group-hover:stroke-[#AFAFAF] group-hover:transition-all 
                 group-hover:ease-in-out group-hover:duration-[0.12]" />
@@ -104,6 +109,10 @@ export default async function Home() {
                 group-hover:ease-in-out group-hover:duration-[0.12]" />
                 <p className="text-xl text-[#424242] group-hover:text-[#AFAFAF] group-hover:transition-all 
                 group-hover:ease-in-out group-hover:duration-[0.12]">{repo.forks_count}</p>
+              </div>
+              <div className="h-fit w-full gap-2 hidden flex-row justifiy-end items-center group-hover:flex">
+                <p style={{ color: langColors[repo.lang] }} className="w-fit text-xl  group-hover:transition-all 
+                group-hover:ease-in-out group-hover:duration-[0.12]">{repo.lang}</p>
               </div>
             </div>
           })
