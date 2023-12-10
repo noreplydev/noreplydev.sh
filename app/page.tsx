@@ -15,7 +15,7 @@ export default async function Home() {
   const posts = getPosts()
 
   return (
-    <main className="relative flex h-full w-full flex-col items-start justify-start overflow-hidden gap-8">
+    <main className="relative flex h-full w-full flex-col items-start justify-start overflow-scroll gap-8">
       <div className="relative flex flex-col h-fit w-full px-10 pt-14">
         <h1 className="text-xl">cristian sánchez</h1>
         <p className="text-lg font-thin text-[#424242]">@noreplydev</p>

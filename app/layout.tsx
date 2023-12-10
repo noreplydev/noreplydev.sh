@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${jetbrains.className}`}>{children}</body>
+    <html lang="en" className='h-full w-full'>
+      <body className={`h-full w-full ${jetbrains.className}`}>{children}</body>
     </html>
   )
 }
