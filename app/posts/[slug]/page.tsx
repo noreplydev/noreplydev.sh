@@ -25,9 +25,9 @@ export default function Post({ params }: { params: { slug: string } }) {
     </div>
     <p className="text-lg font-thin text-[#949494] text-center">{post?.metadata.title.toUpperCase()}</p>
     <img
-      src={'/' + post.metadata.slug + '.png'}
+      src={'/' + post?.metadata.slug + '.png'}
       width="100%"
-      alt={"image-" + post.metadata.title}
+      alt={"image-" + post?.metadata.title}
       className="rounded-xl"
     />
     <Markdown
