@@ -4,7 +4,4 @@ title: Introduction to hashing for beginners
 slug: introduction-to-hashing-for-beginners
 ---
 
-# this is a markdown
-test
-
-### hola
+# comming soon... 
