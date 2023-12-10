@@ -6,12 +6,4 @@ topic: hacking
 author: c. sánchez
 ---
 
-# this is a markdown
-test
-
-### hola
-this is normal text
-
-```
-this is code
-```
+# comming soon...
