@@ -11,7 +11,7 @@ const components = {
 export default function Post({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug)
 
-  return <div className="h-full w-full flex flex-col px-10 py-14 gap-8">
+  return <div className="h-full w-full flex flex-col px-7 py-8 gap-8">
     <GoBack />
     <div className="h-fit w-full flex flex-col gap-2"> {/*METADATA*/}
       <div className="flex flex-row h-fit w-full gap-3 justify-between items-center">
