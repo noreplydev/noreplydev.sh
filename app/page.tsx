@@ -34,7 +34,11 @@ export default async function Home() {
           >work</p>
           <p
             className="text-lg font-thin text-[#949494]"
-          >currently working as a software developer at protofy.xyz</p>
+          >currently working as a software developer at
+            <Link href={"https://protofy.xyz"} className='ml-2 active:underline'>
+              protofy.xyz
+            </Link>
+          </p>
         </div>
         <div
           className="relative flex flex-col h-full w-full gap-2"
