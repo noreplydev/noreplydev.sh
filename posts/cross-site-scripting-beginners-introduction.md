@@ -6,4 +6,6 @@ topic: hacking
 author: c. sánchez
 ---
 
-# comming soon...
+When we talk about web security, there are many different types of attacks that can be exploted. One of the most common is the Cross Site Scripting (XSS). 
+
+comming soon...
