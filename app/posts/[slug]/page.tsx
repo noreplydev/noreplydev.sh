@@ -3,6 +3,12 @@ import { getPostBySlug, getPosts } from "@/lib/fs"
 import Markdown from "react-markdown"
 
 const components = {
+  h1: ({ children, className, node, ...rest }: any) => {
+    return <h1 className="text-xl font-thin text-[#949494]">{children}</h1>
+  },
+  p: ({ children, className, node, ...rest }: any) => {
+    return <p className="text-lg font-thin text-[#949494]">{children}</p>
+  },
   code: ({ children, className, node, ...rest }: any) => {
     return <code className="bg-red-500">{children}</code>
   }

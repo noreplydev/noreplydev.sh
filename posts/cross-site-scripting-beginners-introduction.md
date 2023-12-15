@@ -6,6 +6,8 @@ topic: hacking
 author: c. sánchez
 ---
 
-When we talk about web security, there are many different types of attacks that can be exploted. One of the most common is the Cross Site Scripting (XSS). 
+# Introduction
+
+When we talk about web security, there are many different types of vulnerabilities that we can exploit as attackers. One of the most common ones is Cross Site Scripting (XSS).  
 
 comming soon...
