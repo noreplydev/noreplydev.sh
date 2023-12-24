@@ -15,13 +15,7 @@ export default async function Home() {
   const posts = getPosts()
 
   return (
-    <div className='h-full w-full flex flex-col justify-center items-center'>
-      <p>🚧 Under construction</p>
-    </div >
-  )
-}
-
-/* <main className="relative flex h-full w-full flex-col items-start justify-start overflow-scroll gap-8 px-11">
+    <main className="relative flex h-full w-full flex-col items-start justify-start overflow-scroll gap-8 px-[23vw] pt-12">
       <div className="relative flex flex-col h-fit w-full  px-7 pt-8 ">
         <h1 className="text-xl">cristian sánchez</h1>
         <p className="text-lg font-thin text-[#424242]">@noreplydev</p>
@@ -55,7 +49,7 @@ export default async function Home() {
           <Posts posts={getRecentsPosts(posts)} />
         </div>
       </div>
-      <footer className='h-fit w-full pt-3 pb-10'>
+      <div className='relative h-fit w-full flex pt-3 pb-10'>
         <div
           className='relative flex flex-row justify-center h-fit w-full gap-2'
         >
@@ -72,5 +66,7 @@ export default async function Home() {
         <p
           className="text-lg font-thin text-[#424242] text-center"
         >made by noreplydev</p>
-      </footer>
-    </main> */
+      </div>
+    </main>
+  )
+}
