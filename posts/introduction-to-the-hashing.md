@@ -25,4 +25,10 @@ VI. Pre-image resistance: Given a hash, it must be difficult to find the input t
 VII. 2nd pre-image resistance: Given an input, it must be difficult to find another input that generates the same hash. 
 VIII. Collision resistance: It must be difficult to find two inputs that generate the same hash.
 
-comming soon...
+# Famous hash functions
+
+There are many hash functions. Each one has its own properties and use cases. Some of the most famous are:
+
+- MD5: It's a 128-bit hash function. It's not secure anymore and it's not recommended to use it since the computers are fast enough to find collisions.
+- SHA-1: It's a 160-bit hash function. It runs with the same problems as MD5.
+- SHA-2: It's a family of hash functions. It has different variants like SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256. It's the most used hash function family nowadays. Each variant has a different output length which is the number that follows the SHA- prefix.
