@@ -32,3 +32,9 @@ There are many hash functions. Each one has its own properties and use cases. So
 - MD5: It's a 128-bit hash function. It's not secure anymore and it's not recommended to use it since the computers are fast enough to find collisions.
 - SHA-1: It's a 160-bit hash function. It runs with the same problems as MD5.
 - SHA-2: It's a family of hash functions. It has different variants like SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256. It's the most used hash function family nowadays. Each variant has a different output length which is the number that follows the SHA- prefix.
+
+# Hashing use cases
+
+Hashing is util for many things. Think that hashing is a function that given an input return a unique output. This is very useful when we want unique identifiers for data. For example, a password is a data that we want to store in a database. We don't want to store the password in plain text because if someone gets access to the database, they will have access to all the passwords. So, we can hash the password and store the hash in the database. When a user wants to log in, we can hash the password and compare it with the hash stored in the database. If they match, the user can log in. 
+
+In this case, we are using the hashed password as an identifier of the real password. 
