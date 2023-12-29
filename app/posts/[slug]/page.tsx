@@ -4,7 +4,7 @@ import Markdown from "react-markdown"
 
 const components = {
   h1: ({ children, className, node, ...rest }: any) => {
-    return <h1 className="text-xl font-thin text-[#949494]">{children}</h1>
+    return <h1 className="text-xl font-thin text-[#ffffff] ">{children}</h1>
   },
   p: ({ children, className, node, ...rest }: any) => {
     return <p className="text-lg font-thin text-[#949494]">{children}</p>
