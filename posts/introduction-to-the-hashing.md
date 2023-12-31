@@ -38,3 +38,9 @@ There are many hash functions. Each one has its own properties and use cases. So
 Hashing is util for many things. Think that hashing is a function that given an input return a unique output. This is very useful when we want unique identifiers for data. For example, a password is a data that we want to store in a database. We don't want to store the password in plain text because if someone gets access to the database, they will have access to all the passwords. So, we can hash the password and store the hash in the database. When a user wants to log in, we can hash the password and compare it with the hash stored in the database. If they match, the user can log in. 
 
 In this case, we are using the hashed password as an identifier of the real password. 
+
+# More information
+
+With this article, we have covered the basics of hashing. If you want to learn more about hashing, I recommend you to read the following articles:
+
+- [Albert Stect article](https://www.baeldung.com/cs/hashing)
