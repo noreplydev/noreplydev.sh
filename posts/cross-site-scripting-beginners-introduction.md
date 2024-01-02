@@ -16,4 +16,7 @@ XSS is a type of attack that allows an attacker to inject malicious code into a 
 
 There are three main types of XSS attacks: reflected, stored, and DOM-based. Each type has its own characteristics and vulnerabilities.
 
+### Reflected XSS
+Reflected XSS occurs when an attacker sends a malicious script to a user, often through a link, which then gets executed in the user's browser. The script is reflected off the web server, hence the name. It's typically non-persistent, meaning it only affects the user who clicks on the malicious link. Attackers often use social engineering to trick users into clicking these links. The main defense against reflected XSS is proper input validation and output encoding.
+
 comming soon...
