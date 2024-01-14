@@ -1,5 +1,6 @@
 import { GoBack } from "@/components/GoBack"
 import { getPostBySlug, getPosts } from "@/lib/fs"
+import Link from "next/link"
 import Markdown from "react-markdown"
 
 const components = {
@@ -39,6 +40,25 @@ export default function Post({ params }: { params: { slug: string } }) {
     <Markdown
       components={components}
     >{post?.content}</Markdown>
+
+    <div className='relative h-fit w-full flex flex-col pt-3 pb-10'>
+      <div
+        className='relative flex flex-row justify-center h-fit w-full gap-2'
+      >
+        <Link href="https://twitter.com/noreplydev"
+          className="text-lg font-thin text-[#949494] active:underline"
+        >twitter</Link>
+        <Link href="https://github.com/noreplydev"
+          className="text-lg font-thin text-[#949494] active:underline"
+        >github</Link>
+        <Link href="https://www.linkedin.com/in/cristian-sanchez-dev"
+          className="text-lg font-thin text-[#949494] active:underline"
+        >linkedin</Link>
+      </div>
+      <p
+        className="text-lg font-thin text-[#424242] text-center"
+      >made by noreplydev</p>
+    </div>
   </div>
 }
 

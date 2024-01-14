@@ -43,4 +43,4 @@ In this case, we are using the hashed password as an identifier of the real pass
 
 With this article, we have covered the basics of hashing. If you want to learn more about hashing, I recommend you to read the following articles:
 
-- [Albert Stect article](https://www.baeldung.com/cs/hashing)
+- [- Albert Stect article](https://www.baeldung.com/cs/hashing)
