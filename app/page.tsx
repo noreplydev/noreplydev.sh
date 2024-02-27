@@ -6,9 +6,9 @@ import Link from 'next/link'
 import path from 'path'
 
 /* 
-title: ffffff
-subtitle: 424242
-paragraphs: 949494
+title: #ffffff
+subtitle: #424242
+paragraphs: #949494
 */
 
 export default async function Home() {
@@ -21,7 +21,7 @@ export default async function Home() {
         <p className="text-lg font-thin text-[#424242]">@noreplydev</p>
       </div>
       <div
-        className="relative flex flex-col h-full w-full  px-7 gap-8"
+        className="relative flex flex-col h-fit w-full  px-7 gap-8"
       >
         <p
           className="text-lg font-thin text-[#949494]"
@@ -62,6 +62,9 @@ export default async function Home() {
           <Link href="https://www.linkedin.com/in/cristian-sanchez-dev"
             className="text-lg font-thin text-[#949494] active:underline"
           >linkedin</Link>
+          <Link href="https://www.linkedin.com/in/cristian-sanchez-dev"
+            className="text-lg font-thin text-[#949494] active:underline"
+          >youtube</Link>
         </div>
         <p
           className="text-lg font-thin text-[#424242] text-center"
