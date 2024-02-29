@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import { GeistSans } from 'geist/font/sans'
 
-const jetbrains = JetBrains_Mono({
+export const jetbrains = JetBrains_Mono({
   weight: ['200', '400', '500', '600', '700'],
   subsets: ['latin-ext'],
 })
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='h-full w-full'>
-      <body className={`h-full w-full ${jetbrains.className}`}>{children}</body>
+      <body className={`h-full w-full  ${GeistSans.className}`}>{children}</body>
     </html>
   )
 }
