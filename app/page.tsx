@@ -15,16 +15,16 @@ export default async function Home() {
   const posts = getPosts()
 
   return (
-    <main className="relative flex h-full w-full flex-col items-start justify-start overflow-scroll gap-8 md:px-[23vw] md:pt-12 pt-5">
+    <main className="relative flex h-full w-full flex-col items-start justify-start overflow-scroll gap-8 md:px-[26vw] md:pt-12 pt-5">
       <div className="relative flex flex-col h-fit w-full  px-7 pt-8 ">
-        <h1 className="text-xl">cristian sánchez</h1>
-        <p className="text-lg font-thin text-[#424242]">@noreplydev</p>
+        <h1 className="text-6xl font-bold">cristian <br />sánchez</h1>
+        <p className="text-2xl font-thin text-[#424242]">@noreplydev</p>
       </div>
       <div
         className="relative flex flex-col h-fit w-full  px-7 gap-8"
       >
         <p
-          className="text-lg font-thin text-[#949494]"
+          className="text-xl font-thin text-[#949494]"
         >i just build things with code, share knowledge and learn every day.</p>
         <div
           className="relative flex flex-col h-full w-full"
