@@ -11,7 +11,7 @@ export function Posts({ posts }: { posts: any[] }) {
         return (
           <div
             key={post.metadata.slug}
-            className="relative flex flex-col h-full w-full gap-2 group"
+            className="relative flex flex-col h-full w-full gap-2 group cursor-pointer"
             onClick={() => router.push('/posts/' + post.metadata.slug)}
           >
             <img
@@ -21,7 +21,8 @@ export function Posts({ posts }: { posts: any[] }) {
               className="rounded-xl"
             />
             <p
-              className="text-lg font-thin text-[#949494] group-active:underline transition-all duration-[0.12s] ease-out"
+              className="text-lg font-thin text-[#949494] group-active:underline transition-all duration-[0.12s] ease-out
+                hover:underline"
             >
               {post.metadata.title}
             </p>
