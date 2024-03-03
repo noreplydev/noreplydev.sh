@@ -1,12 +1,6 @@
 import type { Metadata } from 'next'
-import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { GeistSans } from 'geist/font/sans'
-
-export const jetbrains = JetBrains_Mono({
-  weight: ['200', '400', '500', '600', '700'],
-  subsets: ['latin-ext'],
-})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
