@@ -1,4 +1,5 @@
 import { Posts } from '@/components/Posts'
+import { Title } from '@/components/Title'
 import { getPosts, getRecentsPosts } from '@/lib/fs'
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -18,20 +19,19 @@ export default async function Home() {
     <main
       className="relative flex h-screen w-screen flex-col items-start justify-start overflow-scroll gap-8 md:px-[26vw] md:pt-12 pt-5"
     >
+      {/* title */}
+      <Title />
+
+      {/* body */}
       <div
-        className="relative flex flex-col h-fit w-full  px-7 pt-8"
-      >
-        <h1 className="text-6xl font-bold">cristian <br />sánchez</h1>
-        <p className="text-2xl font-light text-[#424242]">@noreplydev</p>
-      </div>
-      <div
-        className="relative flex flex-col h-fit w-full  px-7 gap-8"
+        className="relative flex flex-col h-fit w-full px-7 gap-8
+          justify-center items-center"
       >
         <p
-          className="text-xl font-thin text-[#949494]"
+          className="text-xl font-thin text-[#949494] text-center"
         >i just build things with code, share knowledge and learn every day.</p>
         <div
-          className="relative flex flex-col h-full w-full"
+          className="relative flex flex-col h-full w-full text-center"
         >
           <p
             className="text-3xl font-bold text-white"
@@ -48,11 +48,13 @@ export default async function Home() {
           className="relative flex flex-col h-full w-full gap-2"
         >
           <p
-            className="text-3xl font-bold text-white"
+            className="text-3xl font-bold text-white text-center"
           >some reads</p>
           <Posts posts={getRecentsPosts(posts)} />
         </div>
       </div>
+
+      {/* footer */}
       <div className='relative h-fit w-full flex flex-col pt-3 pb-10'>
         <div
           className='relative flex flex-row justify-center h-fit w-full gap-2'
@@ -74,6 +76,8 @@ export default async function Home() {
           className="text-lg font-thin text-[#424242] text-center"
         >made by noreplydev</p>
       </div>
+
+      {/* background */}
       <div
         className='top-0 left-0 h-[100%] w-[100%] z-[-1]'
         style={{
