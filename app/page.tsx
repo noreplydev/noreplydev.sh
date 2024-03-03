@@ -1,10 +1,8 @@
 import { Posts } from '@/components/Posts'
-import { Title } from '@/components/Title'
+import { NameGenerating } from '@/components/NameGenerating'
 import { getPosts, getRecentsPosts } from '@/lib/fs'
-import fs from 'fs'
-import matter from 'gray-matter'
+import { GeistMono } from 'geist/font/mono';
 import Link from 'next/link'
-import path from 'path'
 
 /* 
 title: #ffffff
@@ -17,10 +15,18 @@ export default async function Home() {
 
   return (
     <main
-      className="relative flex h-screen w-screen flex-col items-start justify-start overflow-scroll gap-8 md:px-[26vw] md:pt-12 pt-5"
+      className="relative flex h-fit w-screen flex-col items-start justify-start overflow-scroll gap-8 md:px-[26vw] "
     >
       {/* title */}
-      <Title />
+      <div
+        className="relative flex flex-col h-[100vh] w-full
+      justify-center items-center gap-4"
+      >
+        <h1 className="text-7xl font-bold text-center">cristian <br />sánchez</h1>
+        <div className={`${GeistMono.className}`}>
+          <NameGenerating />
+        </div>
+      </div>
 
       {/* body */}
       <div
