@@ -26,7 +26,7 @@ export function NameGenerating() {
       })
       setText(newChars.join(''))
       updatePrefix()
-    }, 50)
+    }, 60)
 
     const revealInterval = setInterval(() => {
       updatePrefix()

@@ -18,17 +18,6 @@ export default async function Home() {
       className="relative flex h-fit w-screen flex-col items-start justify-start overflow-scroll 
         gap-8 md:px-[26vw]"
     >
-      {/* background */}
-      <div
-        className='top-0 left-0 h-[100%] w-[100%] z-[-1] animate-appear'
-        style={{
-          position: 'fixed',
-          opacity: '0',
-          filter: "contrast(100%)",
-          backgroundImage: "url(https://arc.net/noise-light.png)"
-        }}
-      ></div>
-
       {/* title */}
       <div
         className="relative flex flex-col h-[100vh] w-full
