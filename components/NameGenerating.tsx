@@ -10,7 +10,7 @@ export function NameGenerating() {
   const MILISECONDS_PER_ITERATIONS = Math.floor(MILISECONDS_TO_RESOLV / RESOLVED_STRING_LENGTH)
 
   const [prefix, setPrefix] = useState("")
-  const [text, setText] = useState("01001110110")
+  const [text, setText] = useState(Array.from({ length: RESOLVED_STRING_LENGTH }, (v, i) => "%").join(""))
   let iterationsCounter = 0
 
   const updatePrefix = () => {
@@ -20,7 +20,6 @@ export function NameGenerating() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log('iterations', iterationsCounter)
       const newChars = text.split('').slice(iterationsCounter).map(() => {
         const randomIndex = Math.floor(Math.random() * CHARACTERS.length)
         return CHARACTERS[randomIndex]
