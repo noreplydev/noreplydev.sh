@@ -15,8 +15,20 @@ export default async function Home() {
 
   return (
     <main
-      className="relative flex h-fit w-screen flex-col items-start justify-start overflow-scroll gap-8 md:px-[26vw] "
+      className="relative flex h-fit w-screen flex-col items-start justify-start overflow-scroll 
+        gap-8 md:px-[26vw]"
     >
+      {/* background */}
+      <div
+        className='top-0 left-0 h-[100%] w-[100%] z-[-1] animate-appear'
+        style={{
+          position: 'fixed',
+          opacity: '0',
+          filter: "contrast(100%)",
+          backgroundImage: "url(https://arc.net/noise-light.png)"
+        }}
+      ></div>
+
       {/* title */}
       <div
         className="relative flex flex-col h-[100vh] w-full
@@ -82,17 +94,6 @@ export default async function Home() {
           className="text-lg font-thin text-[#424242] text-center"
         >made by noreplydev</p>
       </div>
-
-      {/* background */}
-      <div
-        className='top-0 left-0 h-[100%] w-[100%] z-[-1]'
-        style={{
-          position: 'fixed',
-          opacity: '0.5',
-          filter: "contrast(100%)",
-          backgroundImage: "url(https://arc.net/noise-light.png)"
-        }}
-      ></div>
     </main>
   )
 }
