@@ -1,11 +1,10 @@
 'use client'
 import { useEffect, useState } from 'react';
 
-export function NameGenerating() {
-  const RESOLVED_STRING = "@noreplydev"
+export function GeneratedString({ resolvedString = "", className = "" }: { resolvedString: string, className: string }) {
   const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"$%&/()=?¿*';
 
-  const RESOLVED_STRING_LENGTH = RESOLVED_STRING.length
+  const RESOLVED_STRING_LENGTH = resolvedString.length
   const MILISECONDS_TO_RESOLV = 3000
   const MILISECONDS_PER_ITERATIONS = Math.floor(MILISECONDS_TO_RESOLV / RESOLVED_STRING_LENGTH)
 
@@ -14,7 +13,7 @@ export function NameGenerating() {
   let iterationsCounter = 0
 
   const updatePrefix = () => {
-    const _prefix = RESOLVED_STRING.slice(0, iterationsCounter)
+    const _prefix = resolvedString.slice(0, iterationsCounter)
     setPrefix(_prefix)
   }
 
@@ -37,7 +36,7 @@ export function NameGenerating() {
       clearInterval(revealInterval)
       clearInterval(interval)
       setText('')
-      setPrefix(RESOLVED_STRING)
+      setPrefix(resolvedString)
     }, MILISECONDS_TO_RESOLV)
 
     return () => {
@@ -47,6 +46,6 @@ export function NameGenerating() {
   }, [])
 
   return <p
-    className={`text-2xl font-thin text-[#949494] text-center`}
+    className={'text-2xl font-thin text-[#949494] text-center' + " " + className}
   >{prefix}{text}</p>
 }

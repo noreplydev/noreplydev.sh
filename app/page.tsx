@@ -1,5 +1,5 @@
 import { Posts } from '@/components/Posts'
-import { NameGenerating } from '@/components/NameGenerating'
+import { GeneratedString } from '@/components/GeneratedString'
 import { getPosts, getRecentsPosts } from '@/lib/fs'
 import { GeistMono } from 'geist/font/mono';
 import Link from 'next/link'
@@ -25,7 +25,7 @@ export default async function Home() {
       >
         <h1 className="text-7xl font-bold text-center">cristian <br />sánchez</h1>
         <div className={`${GeistMono.className}`}>
-          <NameGenerating />
+          <GeneratedString resolvedString='@noreplydev' />
         </div>
       </div>
 
