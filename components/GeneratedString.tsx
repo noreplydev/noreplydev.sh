@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 
-export function GeneratedString({ resolvedString = "", className = "" }: { resolvedString: string, className: string }) {
+export function GeneratedString({ resolvedString = "", className = "" }: { resolvedString: string, className?: string }) {
   const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"$%&/()=?¿*';
 
   const RESOLVED_STRING_LENGTH = resolvedString.length
