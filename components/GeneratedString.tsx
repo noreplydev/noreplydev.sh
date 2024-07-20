@@ -46,6 +46,6 @@ export function GeneratedString({ resolvedString = "", className = "" }: { resol
   }, [])
 
   return <p
-    className={'text-2xl font-thin text-[#949494] text-center' + " " + className}
+    className={'text-2xl font-extralight text-[#949494] text-center' + " " + className}
   >{prefix}{text}</p>
 }
