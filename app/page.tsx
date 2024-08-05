@@ -7,7 +7,7 @@ export default async function Home() {
       className="relative flex h-screen w-screen flex-col items-center justify-center overflow-scroll 
         gap-8 md:px-[26vw]"
     >
-      <GeneratedString resolvedString='@noreplydev' />
+      <GeneratedString resolvedString='noreplydev' />
     </main>
   )
 }
